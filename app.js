@@ -7,20 +7,6 @@ function unique(){
 }
 
 
-// function Salary11(Level){
-//     console.log(Level)
-
-//     if (Level =="Senior"){
-//          return randomNum(1500,2000)
-
-//     }
-//     else{
-//         return "l"
-//         ,randomNum(500,1000)
-
-//     }
-//   }
-
 
  
  function randomNum(min,max){
