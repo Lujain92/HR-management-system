@@ -1,4 +1,9 @@
 
+h1{
+  font-size: 100px;
+  color:rgba(20, 116, 20, 0.466);
+
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -24,21 +29,48 @@ ul {
     background-color: rgba(17, 17, 17, 0.466);
   }
 
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(17, 16, 16, 0.904);
+  }
+.contain{
+  padding: 20px 20px;
+}
+
+
 
 img {
-    max-width: 100%;
-    max-height: 100%;
+  
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
 }
+  
 
-.design{
-    height: 200px;
-    width: 200px;
-    flex: 0 0 33.333%;
-}
 
-#container{
+  
+.card{
+    
+    flex: 0 0 33%;
+    margin: 1px;
+    background-color: rgba(20, 116, 20, 0.466);
+  
+ }
+    
+    
+
+
+ main{
     display: flex; 
     flex-wrap: wrap;
-    padding-left: 0;
     
-}
+ }
+
+ 
+  .para{
+    color: white;
+  }   

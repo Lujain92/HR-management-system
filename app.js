@@ -1,6 +1,7 @@
 let numberId=1
 const bodyEl=document.getElementsByTagName("body");
-const container=document.getElementById("container")
+const container=document.getElementById("container");
+const mainEl=document.getElementsByTagName("main")
  
  function randomNum(min,max){
     return Math.floor(Math.random()*(max-min))+min
@@ -55,20 +56,28 @@ allEmployee.prototype.render=function() {
     this.salaryCal()
     this.uniqueId()
     divEl=document.createElement("div");
-    container.appendChild(divEl);
-    divEl.className="design"
+    mainEl[0].appendChild(divEl);
+    divEl.className="card"
+    
     imgEl=document.createElement("img");
     imgEl.src=this.imageURL
     imgEl.alt=this.fullName
     divEl.appendChild(imgEl)
-    
+
+    divEl2=document.createElement("div")
+    divEl.appendChild(divEl2)
+    divEl2.className="contain"
+
+
+
     pEl=document.createElement("p");
     pEl.textContent=`Name:${this.fullName} ID:${this.employeeId} Department: ${this.department}Level:${this.Level} ${this.Salary} `
-    
-    divEl.appendChild(pEl)
+    divEl2.appendChild(pEl)
+    pEl.className="para"
     // brEl=document.createElement("br")
     // divEl.appendChild(brEl)
-
+    
+    
     
     
 
